@@ -1,3 +1,380 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Futura_Black";
+    src: url("./Futura\ Extra\ Black\ font.ttf");
+}
+@font-face {
+    font-family: "Futura_book";
+    src: url("./Futura\ Book\ font.ttf");
+}
+
+html,
 body {
-    background-color: ghostwhite;
+    scroll-behavior: smooth;
+}
+
+/* main {
+    max-width: 1366px;
+    background-color: darkkhaki;
+    margin: 0 auto;
+} */
+
+/* .mainContent {
+    display: grid;
+    grid-template-columns: 1fr min(1100px, 100%) 1fr;
+}
+
+.mainContent > * {
+    grid-column: 2;
+} */
+
+header {
+    position: relative;
+    z-index: 2000;
+}
+
+/*  Navbar */
+.navbar {
+    height: 100px;
+    width: 1100px;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    position: fixed;
+    /* give it left and right also 0 so it goes inside the max width container */
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.navbar h1 {
+    margin-left: auto;
+}
+
+.hamburger {
+    height: 100px;
+    width: 100px;
+    background-image: url(./hamburger_blob.png);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    margin-top: 14px;
+}
+
+.hamburger:hover {
+    background-image: url(./hamburger_blob_hover.png);
+    cursor: pointer;
+}
+
+.hamburgerOpenContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 30%;
+    background-image: url("/blob_open_navbar.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0;
+    transition: all 0.25s;
+    padding: 1rem;
+    font-family: "Futura_Black";
+}
+
+.hamburgerOpenContainer.visible {
+    opacity: 1;
+    transition: opacity 0.25s;
+}
+
+.openTopBar {
+    position: relative;
+    width: 100%;
+}
+
+.openTopBar img {
+    padding: 1rem;
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+}
+
+.navLinks {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 140px;
+    margin-bottom: 100px;
+}
+
+.navLinks ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.navLinks li {
+    list-style: none;
+}
+
+.navLinks a {
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+}
+
+.navLinks a:hover {
+    text-decoration: underline;
+    color: #258afd;
+    text-decoration-color: white;
+}
+
+.hamburgerOpenContainer .links a {
+    font-size: 24px;
+    color: white;
+    font-family: "Futura_book";
+}
+
+.hamburgerOpenContainer .links a:hover {
+    text-decoration-color: white;
+}
+/* logo top corner disabled for now 
+.logo {
+    display: block;
+    color: white;
+}
+
+.logo.visible {
+    display: none;
+}
+*/
+.logoMain {
+    position: absolute;
+    left: 822px;
+}
+
+/*  Navbar  END*/
+
+.landingWrapper {
+    background-color: black;
+    background-size: cover;
+}
+
+.landingMainContent {
+    max-width: 1100px;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.landingTextBox {
+    width: 340px;
+    height: 150px;
+    font-family: "Futura_book";
+    font-size: 24px;
+    position: absolute;
+    right: 475px;
+    top: 166px;
+}
+
+.landingMainContent h1 {
+    font-size: 90px;
+    padding: 1rem;
+}
+
+/* Second content section  */
+
+.secondContentContainer {
+    max-width: 1100px;
+    margin: 0 auto;
+    height: 730px;
+    background-color: white;
+    /*     display: flex;
+    flex-direction: column;
+    justify-content: center; */
+}
+
+.paragraphAnimation {
+    width: 700px;
+    height: 200px;
+    font-family: "Futura_book";
+    font-size: 24px;
+    font-weight: bold;
+    padding: 1rem;
+    position: relative;
+    left: 420px;
+    opacity: 0;
+    transition: opacity 2s;
+    transition-delay: 1s;
+}
+
+.paragraphAnimation.visible {
+    opacity: 1;
+}
+
+.textAnimation {
+    font-family: "Futura_Black";
+    font-size: 90px;
+    padding: 1rem;
+    transition: transform 1s;
+    /* transition-delay: 0.1s; */
+    transform: translateY(200%);
+    color: #258afd;
+    margin-top: 150px;
+}
+
+.textAnimation.visible {
+    transform: translateY(0);
+}
+/* Second content section END */
+
+/* Projects section */
+
+.projectsWrapper {
+    background-color: black;
+    color: white;
+}
+
+.projectsContentContainer {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.projectsContentContainer h1 {
+    font-family: "Futura_Black";
+    font-size: 30px;
+    margin-bottom: 90px;
+    margin-top: 90px;
+}
+
+.projects {
+    margin-bottom: 150px;
+}
+
+.projects ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.projects li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* background-color: darkmagenta; */
+}
+
+.projectsImage {
+    margin-bottom: 10px;
+    transition: scale 0.5s;
+    scale: 1;
+    width: 350px;
+    height: 220px;
+    object-fit: cover;
+}
+
+.projectsImage:hover {
+    scale: 1.1;
+    transition: scale 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.projectDescription {
+    min-width: 130px;
+    min-height: 150px;
+    padding: 1rem;
+    font-family: "Futura_book";
+    font-size: 18px;
+}
+
+.projectDescription h2 {
+    margin-bottom: 10px;
+}
+
+.iconsContainer {
+    padding: 1rem;
+}
+
+.git {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+/* Projects section END */
+
+.footerContentContainer {
+    font-family: "Futura_book";
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: white;
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 30px;
+    align-content: center;
+    /*     background-image: url("/blob-12_footer.png");
+    background-repeat: no-repeat;
+    background-position: bottom left; */
+    gap: 150px;
+}
+
+.spiced {
+    padding-left: 1rem;
+    z-index: 5;
+}
+
+.contactData {
+    z-index: 5;
+}
+
+.address,
+.contact {
+    margin-bottom: 50px;
+}
+
+.links ul {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.links li {
+    list-style: none;
+}
+
+.links li a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+
+.links li a:hover {
+    text-decoration: underline;
+}
+
+.footerBlob {
+    position: fixed;
+    bottom: 0;
+}
+
+/* to make a box appear at the bottom of the screen */
+.square {
+    height: 400px;
+    width: 600px;
+    /* background-color: darkorchid; */
+    position: absolute;
+    background-image: url("/blob-12_footer.png");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: contain;
+    left: 0;
 }
