@@ -15,16 +15,16 @@ export default function Projects() {
         },
         {
             id: 2,
-            img: "/candypop_static.png",
-            img_hover: "/candy-pop.gif",
-            name: "CandyPop",
+            img: "/candyploppic.png",
+            img_hover: "/candyPlop.gif",
+            name: "CandyPlop",
             description: "Connect 4 fully made with vanilla Javascript.",
             git: "https://github.com/spicedacademy/liebstockel-socialnetwork",
         },
         {
             id: 3,
-            img: "/petition_static.png",
-            img_hover: "/petition.gif",
+            img: "/petitionpic.png",
+            img_hover: "/petition(1).gif",
             name: "Petition",
             description:
                 "This petition project uses cookies, encrypted user login as well as a database to handle different users.",

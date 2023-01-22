@@ -36,23 +36,26 @@ export default function HamburgerMenu({ closingMenu, hamburgerClicked }) {
                 <div className="navLinks">
                     <ul>
                         <li>
-                            <a href="#landing">home</a>
+                            <a onClick={closingMenu} href="/#landing">
+                                home
+                            </a>
                         </li>
                         <li>
-                            <a href="#projects">projects</a>
+                            <a onClick={closingMenu} href="/#projects">
+                                projects
+                            </a>
                         </li>
                         <li>
-                            <a href="#footer">contact</a>
+                            <a onClick={closingMenu} href="/#footer">
+                                contact
+                            </a>
                         </li>
                     </ul>
                 </div>
                 <div className="links">
                     <ul>
                         <li>
-                            <a href="#">Impressum |</a>
-                        </li>
-                        <li>
-                            <a href="#">AGB |</a>
+                            <a href="/impressum">Impressum |</a>
                         </li>
                         <li>
                             <a href="#">Copyright</a>

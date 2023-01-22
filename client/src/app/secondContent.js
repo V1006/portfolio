@@ -34,11 +34,9 @@ export default function SecondContent() {
                             : "paragraphAnimation"
                     }
                 >
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                    aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                    justo duo dolores et ea rebum. Stet clita kasd gubergren, no
-                    sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    My name is Vedran , I&#39;m a junior full stack developer
+                    based in germany. I have a passion for minimal design and
+                    like to experiment to push the boundaries of modern design.
                 </p>
             </div>
         </>

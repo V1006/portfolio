@@ -21,30 +21,33 @@ export default function LandingContent() {
         <>
             <div id="landing" className="landingWrapper">
                 <div className="landingMainContent">
-                    <motion.video
-                        /* onMouseMove={handleMouse} */
-                        drag
-                        dragConstraints={{
-                            left: 0,
-                            right: 0,
-                            top: 0,
-                            bottom: 0,
-                        }}
-                        style={{
-                            x: 0 /* rotateX: rotateX, rotateY: rotateY  */,
-                        }}
-                        height="80%"
-                        src="/X2Download.app-blob12.mp4"
-                        autoPlay
-                        muted
-                        loop
-                    ></motion.video>
-                    <img className="logoMain" src="./logo.png"></img>
-                    <p className="landingTextBox">
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                        sed diam nonumy eirmod tempor invidunt ut labore et
-                        dolore magna aliquyam
-                    </p>
+                    <section className="landing-middle-section">
+                        <motion.video
+                            /* onMouseMove={handleMouse} */
+                            drag
+                            dragConstraints={{
+                                left: 0,
+                                right: 0,
+                                top: 0,
+                                bottom: 0,
+                            }}
+                            style={{
+                                x: 0 /* rotateX: rotateX, rotateY: rotateY  */,
+                            }}
+                            src="/X2Download.app-blob12.mp4"
+                            autoPlay
+                            muted
+                            loop
+                        ></motion.video>
+                        <img className="logoMain" src="./logo.png"></img>
+                        <p className="landingTextBox">
+                            Web design can be so much more if we push the
+                            boundaries through experiments. I believe in playful
+                            design that engages the user in a friendly way. My
+                            vision is that design evolves into more diversity
+                            and user interaction.
+                        </p>
+                    </section>
                 </div>
             </div>
         </>

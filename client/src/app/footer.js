@@ -30,9 +30,6 @@ export default function Footer() {
                                 <a href="#">Impressum |</a>
                             </li>
                             <li>
-                                <a href="#">AGB |</a>
-                            </li>
-                            <li>
                                 <a href="#">Copyright</a>
                             </li>
                         </ul>

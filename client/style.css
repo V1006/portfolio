@@ -33,6 +33,7 @@ body {
     grid-column: 2;
 } */
 
+/* i think i did this so the navbar is always above everything else */
 header {
     position: relative;
     z-index: 2000;
@@ -76,7 +77,7 @@ header {
     top: 0;
     left: 0;
     min-height: 100vh;
-    width: 30%;
+    width: 600px;
     background-image: url("/blob_open_navbar.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -152,8 +153,12 @@ header {
 }
 */
 .logoMain {
+    /*     position: absolute;
+    left: 822px; */
     position: absolute;
-    left: 822px;
+    z-index: 10;
+    top: calc(40% - 59.5px);
+    left: calc(50% - 126px);
 }
 
 /*  Navbar  END*/
@@ -165,12 +170,24 @@ header {
 
 .landingMainContent {
     max-width: 1100px;
+    width: 100%;
     margin: 0 auto;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: white;
+    align-items: center;
+}
+
+.landing-middle-section {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+.landing-middle-section video {
+    width: 100%;
 }
 
 .landingTextBox {
@@ -179,19 +196,15 @@ header {
     font-family: "Futura_book";
     font-size: 24px;
     position: absolute;
-    right: 475px;
-    top: 166px;
-}
-
-.landingMainContent h1 {
-    font-size: 90px;
-    padding: 1rem;
+    right: -132px;
+    top: 54px;
 }
 
 /* Second content section  */
 
 .secondContentContainer {
     max-width: 1100px;
+    width: 100%;
     margin: 0 auto;
     height: 730px;
     background-color: white;
@@ -208,10 +221,12 @@ header {
     font-weight: bold;
     padding: 1rem;
     position: relative;
-    left: 420px;
+    /* left: 420px; */
+    margin-left: auto;
     opacity: 0;
     transition: opacity 2s;
     transition-delay: 1s;
+    text-transform: uppercase;
 }
 
 .paragraphAnimation.visible {
@@ -243,6 +258,7 @@ header {
 
 .projectsContentContainer {
     max-width: 1100px;
+    width: 100%;
     margin: 0 auto;
     padding: 1rem;
 }
@@ -261,6 +277,7 @@ header {
 .projects ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
     gap: 25px;
 }
 
@@ -276,8 +293,8 @@ header {
     margin-bottom: 10px;
     transition: scale 0.5s;
     scale: 1;
-    width: 350px;
-    height: 220px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -319,8 +336,9 @@ header {
     min-height: 400px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    font-size: 30px;
+    font-size: 1.35rem;
     align-content: center;
+    padding: 1rem;
     /*     background-image: url("/blob-12_footer.png");
     background-repeat: no-repeat;
     background-position: bottom left; */
@@ -328,7 +346,6 @@ header {
 }
 
 .spiced {
-    padding-left: 1rem;
     z-index: 5;
 }
 
@@ -377,4 +394,167 @@ header {
     background-position: bottom left;
     background-size: contain;
     left: 0;
+}
+
+/* impressum  */
+
+.impressumMainContent {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 1rem;
+}
+
+.impressumMainContent h1 {
+    margin-top: 100px;
+    font-size: 5.6rem;
+    font-family: "Futura_Black";
+    text-transform: uppercase;
+}
+
+.impressumMainContent h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-family: "Futura_Black";
+    text-transform: uppercase;
+}
+
+.impressumMainContent p {
+    font-size: 1.1rem;
+    font-family: "Futura_book";
+}
+
+/* playground */
+
+.playground {
+    background-color: #162031;
+    height: 100vh;
+    width: 100%;
+}
+
+.playground h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.playLinks {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: ghostwhite;
+}
+
+.playground li {
+    list-style: none;
+    padding: 1rem;
+}
+
+.playground a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: ghostwhite;
+}
+
+#canvas1 {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(27, 27, 73);
+    cursor: none;
+}
+
+#canvas2 {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.fluid h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: ghostwhite;
+    text-transform: uppercase;
+    font-size: 3rem;
+    z-index: 5;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+@media screen and (max-width: 992px) {
+    .landingTextBox {
+        display: none;
+    }
+
+    .secondContentContainer {
+        height: fit-content;
+    }
+    .paragraphAnimation {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 150px;
+    }
+    .projects ul {
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    }
+
+    .projectsImage {
+        height: 100%;
+        width: 100%;
+    }
+    .footerContentContainer {
+        grid-template-columns: 100%;
+        min-height: 100%;
+        position: relative;
+    }
+
+    .square {
+        height: 70%;
+        width: 70%;
+        bottom: 0;
+    }
+
+    .hamburgerOpenContainer {
+        right: 0;
+        width: 50vw;
+        min-height: 100%;
+    }
+
+    .hamburgerOpenContainer .links a {
+        font-size: 20px;
+    }
+    .navLinks a {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .hamburgerOpenContainer {
+        right: 0;
+        width: 100vw;
+        min-height: 100%;
+    }
+    .links ul {
+        justify-content: flex-start;
+    }
+
+    .impressumMainContent h1 {
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width: 576px) {
+    .square {
+        height: 90%;
+        width: 90%;
+    }
 }
