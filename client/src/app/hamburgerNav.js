@@ -58,7 +58,7 @@ export default function HamburgerMenu({ closingMenu, hamburgerClicked }) {
                             <a href="/impressum">Impressum |</a>
                         </li>
                         <li>
-                            <a href="#">Copyright</a>
+                            <a href="/copyright">Copyright</a>
                         </li>
                     </ul>
                 </div>

@@ -8,9 +8,11 @@ import Projects from "./projects";
 import Footer from "./footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Impressum from "./impressum";
+import Copyright from "./copyright";
 import Playground from "./playground";
 import Particle from "./particle";
 import Fluid from "./fluid";
+import HamburgerAnimation from "./hamburgerAnimation";
 
 /* import { BrowserRouter, Routes, Route } from "react-router-dom"; */
 
@@ -38,6 +40,16 @@ export default function App() {
         );
     }
 
+    function renderCopyright() {
+        return (
+            <>
+                <Navbar />
+                <Copyright />
+                <Footer />
+            </>
+        );
+    }
+
     /*  function renderPlayground() {
         return (
             <>
@@ -56,6 +68,10 @@ export default function App() {
                             path="/impressum"
                             element={renderImpressum()}
                         ></Route>
+                        <Route
+                            path="/copyright"
+                            element={renderCopyright()}
+                        ></Route>
                         <Route exact path="/" element={renderSite()}></Route>
                         <Route
                             exact
@@ -71,6 +87,11 @@ export default function App() {
                             exact
                             path="/playground/fluid"
                             element={<Fluid />}
+                        ></Route>
+                        <Route
+                            exact
+                            path="/playground/hamburger"
+                            element={<HamburgerAnimation />}
                         ></Route>
                     </Routes>
                 </BrowserRouter>

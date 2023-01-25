@@ -27,10 +27,10 @@ export default function Footer() {
                     <div className="links">
                         <ul>
                             <li>
-                                <a href="#">Impressum |</a>
+                                <a href="/impressum">Impressum |</a>
                             </li>
                             <li>
-                                <a href="#">Copyright</a>
+                                <a href="/copyright">Copyright</a>
                             </li>
                         </ul>
                     </div>

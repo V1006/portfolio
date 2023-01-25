@@ -20,6 +20,11 @@ export default function Playground() {
                                 Fluid (webGL framework)
                             </a>
                         </li>
+                        <li>
+                            <a href="/playground/hamburger">
+                                Hamburger animation (vanilla JS and CSS)
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>

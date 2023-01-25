@@ -266,10 +266,19 @@ header {
 .projectsContentContainer h1 {
     font-family: "Futura_Black";
     font-size: 30px;
-    margin-bottom: 90px;
+    margin-bottom: 50px;
     margin-top: 90px;
 }
-
+.projectsContentContainer p {
+    font-family: "Futura_book";
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.projectsContentContainer a {
+    font-family: "Futura_Black";
+    font-size: 18px;
+    color: white;
+}
 .projects {
     margin-bottom: 150px;
 }
@@ -291,6 +300,7 @@ header {
 
 .projectsImage {
     margin-bottom: 10px;
+    margin-top: 50px;
     transition: scale 0.5s;
     scale: 1;
     width: 100%;
@@ -429,6 +439,55 @@ header {
     font-family: "Futura_book";
 }
 
+/* copyright */
+.copyrightMainContent {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 1rem;
+}
+
+.copyrightMainContent h1 {
+    margin-top: 100px;
+    font-size: 5.6rem;
+    font-family: "Futura_Black";
+    text-transform: uppercase;
+}
+
+.copyrightMainContent h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-family: "Futura_Black";
+    text-transform: uppercase;
+}
+
+.copyrightMainContent h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-family: "Futura_Black";
+    text-transform: uppercase;
+}
+
+.copyrightMainContent h4 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-family: "Futura_Black";
+}
+
+.copyrightMainContent p {
+    font-size: 1.1rem;
+    font-family: "Futura_book";
+}
+
+.copyrightMainContent a {
+    color: white;
+}
+
 /* playground */
 
 .playground {
@@ -460,7 +519,11 @@ header {
     text-decoration: none;
     color: ghostwhite;
 }
+.playground a:hover {
+    text-decoration: underline;
+}
 
+/* particle emitter */
 #canvas1 {
     position: fixed;
     left: 0;
@@ -471,6 +534,7 @@ header {
     cursor: none;
 }
 
+/* fluid  */
 #canvas2 {
     position: fixed;
     left: 0;
@@ -492,6 +556,91 @@ header {
     pointer-events: none;
 }
 
+/* hamburger animation */
+
+.hamburgerAnimationContainer {
+    background-color: black;
+    height: 100vh;
+}
+
+.hamburgerAnimationContainer h1 {
+    color: white;
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-family: "Futura_Black";
+    margin-bottom: 10px;
+}
+.hamburgerAnimation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arrowAnimation {
+    display: flex;
+    animation: move 1.1s infinite ease-in-out;
+    margin-bottom: 15px;
+}
+
+.arrowAnimation span {
+    width: 10px;
+    height: 40px;
+    background: white;
+    border-radius: 5px;
+    margin: 6px;
+}
+
+.span1 {
+    transform: rotate(-45deg);
+}
+
+.span2 {
+    transform: rotate(45deg);
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0, 0px);
+    }
+    50% {
+        transform: translate(0, 20px);
+    }
+    100% {
+        transform: translate(0, 0px);
+    }
+}
+.buttonOne {
+    border-radius: 1rem;
+}
+
+.buttonOne .hamLine {
+    transition: y 300ms ease-in 300ms, rotate 300ms ease-in, opacity 0ms 300ms;
+    transform-origin: center;
+}
+
+.buttonOne[aria-expanded="true"] .hamLine {
+    transition: y 300ms ease-in, rotate 300ms ease-in 300ms, opacity 0ms 300ms;
+}
+
+.buttonOne[aria-expanded="true"] :is(.top, .bottom) {
+    y: 45;
+}
+
+.buttonOne[aria-expanded="true"] .top {
+    rotate: 45deg;
+}
+.buttonOne[aria-expanded="true"] .middle {
+    opacity: 0;
+}
+.buttonOne[aria-expanded="true"] .bottom {
+    rotate: -45deg;
+}
+
+/* responsive */
 @media screen and (max-width: 992px) {
     .landingTextBox {
         display: none;

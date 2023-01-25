@@ -39,6 +39,16 @@ export default function Projects() {
             <section className="projectsWrapper">
                 <div id="projects" className="projectsContentContainer">
                     <h1>Projects</h1>
+                    <p>
+                        {" "}
+                        Here are recent projects I have been working on.
+                        <br />
+                        You can also check out my playground where I am playing
+                        around with animations.
+                    </p>
+                    <a target="_blank" href="/playground">
+                        Playground
+                    </a>
                     <div className="projects">
                         <ul>
                             {projects.map((project) => (
