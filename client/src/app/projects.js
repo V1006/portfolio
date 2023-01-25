@@ -11,7 +11,7 @@ export default function Projects() {
             name: "Podchat",
             description:
                 "A Social Network made with React for podcast enthusiasts to connect and share their favorite podcasts.",
-            git: "https://github.com/spicedacademy/liebstockel-socialnetwork",
+            git: "https://github.com/V1006/socialnetwork",
         },
         {
             id: 2,
@@ -19,7 +19,7 @@ export default function Projects() {
             img_hover: "/candyPlop.gif",
             name: "CandyPlop",
             description: "Connect 4 fully made with vanilla Javascript.",
-            git: "https://github.com/spicedacademy/liebstockel-socialnetwork",
+            git: "https://github.com/V1006/connect-four",
         },
         {
             id: 3,
@@ -28,7 +28,7 @@ export default function Projects() {
             name: "Petition",
             description:
                 "This petition project uses cookies, encrypted user login as well as a database to handle different users.",
-            git: "https://github.com/spicedacademy/liebstockel-socialnetwork",
+            git: "https://github.com/V1006/petition",
         },
     ]);
     console.log(setProjects);
