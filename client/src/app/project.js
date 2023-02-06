@@ -21,13 +21,15 @@ export default function Project({ project }) {
     return (
         <>
             <li className="project" key={project.id}>
-                <img
-                    id={project.id}
-                    onMouseOver={handleMouseOver}
-                    onMouseOut={handleMouseOut}
-                    src={hover ? project.img_hover : project.img}
-                    className="projectsImage"
-                ></img>
+                <a target="_blank" rel="noreferrer" href={project.link}>
+                    <img
+                        id={project.id}
+                        onMouseOver={handleMouseOver}
+                        onMouseOut={handleMouseOut}
+                        src={hover ? project.img_hover : project.img}
+                        className="projectsImage"
+                    ></img>
+                </a>
                 <div className="projectDescription">
                     <h2>{project.name}</h2>
                     <p>{project.description}</p>

@@ -8,21 +8,17 @@ export default function Footer() {
         <>
             <div id="footer" className="footerContentContainer">
                 <article className="spiced">
-                    <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                        sed diam nonumy eirmod tempor invidunt ut labore et
-                        dolore magna aliquyam
-                    </p>
+                    <p></p>
                 </article>
                 <article className="contactData">
                     <div className="address">
-                        <p>Vedran</p>
-                        <p>Street name</p>
+                        <p>Vedran Jaksic</p>
+                        <p>Peliserkerstr. 2</p>
                         <p>52068 Aachen</p>
                     </div>
                     <div className="contact">
-                        <p>Mobile 1234567</p>
-                        <p>Email placeholder@test.com</p>
+                        <p></p>
+                        <p>Email: vedranj1006@gmail.com</p>
                     </div>
                     <div className="links">
                         <ul>

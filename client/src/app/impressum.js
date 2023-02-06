@@ -24,10 +24,6 @@ export default function Impressum() {
                         <br />
                         E-Mail: vedran-j@web.de
                     </p>
-
-                    <p>
-                        Quelle: <a href="https://www.e-recht24.de">eRecht24</a>
-                    </p>
                 </div>
             </div>
         </>

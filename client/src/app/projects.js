@@ -19,7 +19,8 @@ export default function Projects() {
             img_hover: "/candyPlop.gif",
             name: "CandyPlop",
             description: "Connect 4 fully made with vanilla Javascript.",
-            git: "https://github.com/V1006/connect-four",
+            git: "https://github.com/V1006/connect-four/tree/master/week3/day5/Connect%20Four",
+            link: "https://fboo0j.csb.app/",
         },
         {
             id: 3,

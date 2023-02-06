@@ -354,12 +354,6 @@ export default function Copyright() {
                         Interesses der Europ&auml;ischen Union oder eines
                         Mitgliedstaats verarbeitet werden.
                     </p>
-                    <p>
-                        Quelle:{" "}
-                        <a href="https://www.e-recht24.de">
-                            https://www.e-recht24.de
-                        </a>
-                    </p>
                 </div>
             </div>
         </>
