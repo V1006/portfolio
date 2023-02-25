@@ -9,6 +9,7 @@ export default function Playground() {
             <div className="playground">
                 <div className="playLinks">
                     <h1>Playground Projects:</h1>
+                    <h2>DEVELOPED FOR GOOGLE CHROME</h2>
                     <ul>
                         <li>
                             <a href="/playground/particle">
